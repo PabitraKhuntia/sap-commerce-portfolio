@@ -12,5 +12,5 @@ This repository contains case studies, architecture diagrams, and sanitized code
 ---
 
 ## 📂 Projects
-1. **[payment](./erevmax/README.md)**
+1. **[payment](./payment/readme.md)**
 
