@@ -1,0 +1,3 @@
+INSERT_UPDATE Product; code[unique=true]; name[lang=en]; catalogVersion(catalog(id),version)[unique=true]; price
+; demo-product-001; Demo Product 1; (electronicsCatalog:Online); 99.99
+; demo-product-002; Demo Product 2; (electronicsCatalog:Online); 149.99
