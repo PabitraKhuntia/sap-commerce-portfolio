@@ -12,6 +12,8 @@ This repository contains case studies, architecture diagrams, and sanitized code
 ---
 
 ## 📂 Projects
-1. **[Payment](./payment/readme.md)**
-2. **[Sanitized SAP Commerce Cloud](./samplecodes/readme.md)**
+1. **[AGCO](./agco/readme.md)**
+2. **[Singtel](./singtel/readme.md)**
+3. **[Maxis](./maxis/readme.md)**
+4. **[eRevmax](./erevmax/readme.md)**
 
