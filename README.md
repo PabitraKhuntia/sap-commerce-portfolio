@@ -13,4 +13,5 @@ This repository contains case studies, architecture diagrams, and sanitized code
 
 ## 📂 Projects
 1. **[payment](./payment/readme.md)**
+2. **[Sanitized SAP Commerce Cloud](./samplecodes/readme.md)**
 
