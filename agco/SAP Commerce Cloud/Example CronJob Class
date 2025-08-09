@@ -1,0 +1,23 @@
+package com.example.core.job;
+
+import de.hybris.platform.cronjob.model.CronJobModel;
+import de.hybris.platform.servicelayer.cronjob.AbstractJobPerformable;
+import de.hybris.platform.servicelayer.cronjob.PerformResult;
+import de.hybris.platform.servicelayer.cronjob.PerformResult.Result;
+import de.hybris.platform.servicelayer.cronjob.PerformResult.Status;
+
+import org.apache.log4j.Logger;
+
+public class SampleDataCleanupJob extends AbstractJobPerformable<CronJobModel>
+{
+    private static final Logger LOG = Logger.getLogger(SampleDataCleanupJob.class);
+
+    @Override
+    public PerformResult perform(final CronJobModel cronJob)
+    {
+        LOG.info("Running sample data cleanup job...");
+        // Dummy cleanup logic here
+        LOG.info("Cleanup completed successfully.");
+        return new PerformResult(Result.SUCCESS, Status.FINISHED);
+    }
+}
