@@ -1,0 +1,37 @@
+package com.example.core.controllers;
+
+import de.hybris.platform.commercewebservicescommons.controllers.BaseController;
+import de.hybris.platform.commercewebservicescommons.dto.product.ProductWsDTO;
+import de.hybris.platform.webservicescommons.mapping.DataMapper;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
+
+import javax.annotation.Resource;
+import java.util.List;
+
+@Controller
+@RequestMapping(value = "/{baseSiteId}/customproducts")
+public class CustomProductController extends BaseController
+{
+    @Resource
+    private DataMapper dataMapper;
+
+    @GetMapping
+    @ResponseBody
+    public List<ProductWsDTO> getCustomProducts(@PathVariable final String baseSiteId)
+    {
+        // Dummy logic: Replace with real product fetching
+        System.out.println("Fetching custom products for site: " + baseSiteId);
+        return List.of();
+    }
+
+    @PostMapping
+    @ResponseBody
+    public String createCustomProduct(@RequestBody final ProductWsDTO product)
+    {
+        // Dummy logic: Replace with actual creation code
+        System.out.println("Creating product: " + product.getName());
+        return "Product created successfully";
+    }
+}
